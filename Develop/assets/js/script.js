@@ -23,11 +23,24 @@ function blockColor(){
     })
 }
 
+//click event for save button and saving input
 saveBtn.on("click", function(){
     var time = $(this).siblings(".hour").text();
-    var plan = $(this).siblings(".plan");
+    var plan = $(this).siblings(".plan").val();
 
     localStorage.setItem(time, plan);
 })
 
+function planner(){
+    $(".hour").each(function(){
+        var currentHour = $(this).text();
+        var currentPlan = localStorage.getItem(currentHour);
+
+        if (currentPlan !== null){
+            $(this).siblings(".plan").val(currentPlan);
+        }
+    })
+}
+
 blockColor();
+planner();
