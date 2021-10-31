@@ -13,15 +13,6 @@ saveBtn.on("click", function(){
     localStorage.setItem(time, plan);
 });
 
-// $("#hour9 .plan").val(localStorage.getItem("hour9"));
-// $("#hour10 .plan").val(localStorage.getItem("hour10"));
-// $("#hour11 .plan").val(localStorage.getItem("hour11"));
-// $("#hour12 .plan").val(localStorage.getItem("hour12"));
-// $("#hour13 .plan").val(localStorage.getItem("hour13"));
-// $("#hour14 .plan").val(localStorage.getItem("hour14"));
-// $("#hour15 .plan").val(localStorage.getItem("hour15"));
-// $("#hour16 .plan").val(localStorage.getItem("hour16"));
-// $("#hour17 .plan").val(localStorage.getItem("hour17"));
 
 // blocks color-coded to indicate if past present or future
 function blockColor(){
